@@ -1,0 +1,1 @@
+dumb system info with a lot of hardcode
