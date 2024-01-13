@@ -17,7 +17,7 @@ func main() {
 
 		loadStr := formatLoad(cpuInfo)
 
-		fmt.Printf("\033[1m\033[2K\rCPU: \033[33;1m%.2f%%\033[0m, \033[1mLoad:%s, \033[1mRAM: \033[33;1m%.2f\033[0mGB, \033[1mFree: \033[33;1m%.2f\033[0mGB",
+		fmt.Printf("\033[1m\033[2K\rCPU: \033[33;1m%.2f%%\033[0m, \033[1mLoad:%s, \033[1mRAM: \033[33;1m%.2f\033[0m\033[1m%%, \033[1mFree: \033[33;1m%.2f\033[0m\033[1mGB",
 			overallCPU, loadStr, ramInfo.UsedPercent, float64(ramInfo.Free)/1024/1024/1024)
 	}
 }
